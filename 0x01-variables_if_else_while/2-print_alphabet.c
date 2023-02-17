@@ -8,12 +8,18 @@
  */
 int main(void)
 {
-	char c;
-    for (c = 'a'; c <= 'z'; c++)
-   	 {
-       		 putchar(c);
-  	  }
-   		 putchar('\n');
+	int d;
+
+	for (d = '0'; d <= '9'; d++)
+	{
+		putchar(d);
+		if (d != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
 
 	return (0);
 }
