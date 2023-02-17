@@ -1,4 +1,4 @@
-#include <stdio.h>
+include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 /**
@@ -8,11 +8,18 @@
  */
 int main(void)
 {
-	char low;
+	int d;
 
-	for (low = 'a'; low <= 'z'; low++)
-		putchar(low);
-		printf("\n");
+	for (d = '0'; d <= '9'; d++)
+	{
+		putchar(d);
+		if (d != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
 
 	return (0);
 }
