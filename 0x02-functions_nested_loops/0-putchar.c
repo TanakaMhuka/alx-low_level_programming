@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() 
+int main(void)
 {
 	putchar('_');
 	putchar('p');
@@ -11,6 +11,6 @@ int main()
 	putchar('a');
 	putchar('r');
 	putchar('\n');
-	return 0;
+	return(0);
 }
 
