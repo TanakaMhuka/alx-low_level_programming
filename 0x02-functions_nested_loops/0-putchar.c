@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+int main(void)
 {
 	char text[]="_putchar\n";
 	for(int	i=0;text[i]!='\n';i++)
