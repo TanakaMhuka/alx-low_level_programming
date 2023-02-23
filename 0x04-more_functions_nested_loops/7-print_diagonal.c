@@ -1,34 +1,32 @@
 #include "main.h"
-
 /**
- * print_diagonal - entry point
+ * print_diagonal -  checks for checks for a digit (0 through 9).
+ * @n: n -  Variable
  *
- * Description: Prints diagonals
- *@n: number of spaces
- * Return: void
+ * Return: Always 0.
  */
-
 void print_diagonal(int n)
 {
-	int park, num_lines;
+	int x, y;
 
-	if (n <= 0)
+	if (n > 0)
 	{
-		_putchar('\n');
+		for (x = 1; x <= n; x++)
+		{
+			for (y = 1; y <= n; y++)
+			{
+				if (x == y)
+				{
+					_putchar(92);
+					break;
+				}
+				_putchar(' ');
+			}
+			_putchar('\n');
+		}
 	}
 	else
 	{
-		for (park = 1; park <= n; park++)
-		{
-			if (row > 1)
-			{
-				for (num_lines = 1; num_lines <= park - 1; num_lines++)
-				{
-				_putchar(' ');
-				}
-			}
-			_putchar('\\');
-			_putchar('\n');
-		}
+		_putchar('\n');
 	}
 }
